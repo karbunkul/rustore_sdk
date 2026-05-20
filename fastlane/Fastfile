@@ -1,0 +1,22 @@
+lane :test do
+  token = rustore_get_auth_token
+  UI.message("Token: #{token}")
+
+#   rustore_upload_aab(
+#     version_name: "58",
+#     aab_path: "aab_path",
+#     submit: false
+#   )
+
+  # 2. Get version
+   version = rustore_get_app_version(
+     status: "DRAFT"
+#      testing_type: "ALPHA"
+   )
+
+   if version
+     UI.message("Version Name: #{version['versionName']}")
+     UI.message("Version Code: #{version['versionCode']}")
+     UI.message("Status: #{version['versionStatus']}")
+   end
+end
