@@ -1,4 +1,4 @@
-require 'fastlane/plugin/rustore_sdk/version'
+require_relative 'rustore_sdk/version'
 
 module Fastlane
   module RustoreSdk
