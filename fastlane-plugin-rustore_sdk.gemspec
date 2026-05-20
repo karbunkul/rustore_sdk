@@ -5,8 +5,8 @@ require 'fastlane/plugin/rustore_sdk/version'
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-rustore_sdk'
   spec.version       = Fastlane::RustoreSdk::VERSION
-  spec.author        = 'apohodun'
-  spec.email         = 'apohodun@sdvor.com'
+  spec.author        = 'karbunkul'
+  spec.email         = 'apokhodyun@gmail.com'
 
   spec.summary       = 'RuStore SDK'
   spec.homepage      = "https://github.com/karbunkul/fastlane-plugin-rustore_sdk"
